@@ -3,7 +3,7 @@ use std::path::PathBuf;
 mod kv;
 mod sled;
 
-pub trait KvsEngine : Send{
+pub trait KvsEngine: Send {
     fn set(&mut self, key: String, value: String) -> Result<(), KvError>;
 
     fn get(&mut self, key: String) -> Result<Option<String>, KvError>;
@@ -25,7 +25,7 @@ where
             let k = kv::KvStore::open(path.unwrap())?;
             Ok(Box::new(k))
         }
-        Engine::SLED=>{
+        Engine::SLED => {
             let k = sled::SledKvsEngine::open(path.unwrap())?;
             Ok(Box::new(k))
         }

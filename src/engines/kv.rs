@@ -14,7 +14,6 @@ use crate::KvError;
 
 const COMPACTION_THRESHOLD: u64 = 1024 * 1024;
 
-
 pub struct KvStore {
     path: PathBuf,
 

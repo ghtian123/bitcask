@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c1661958401930f9",
+        "id": "7c0f1f6d23436f13",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "README.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "1abcc9184c8f3a90",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "README.md",
-            "mode": "preview"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -79,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,7 +82,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c1661958401930f9",
+  "active": "7c0f1f6d23436f13",
   "lastOpenFiles": [
     "README.md"
   ]

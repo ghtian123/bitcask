@@ -1,6 +1,6 @@
 mod threadpool;
-pub use threadpool::NaiveThreadPool;
 use crate::KvError;
+pub use threadpool::NaiveThreadPool;
 
 pub trait ThreadPool {
     fn new(threads: usize) -> Self

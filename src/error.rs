@@ -6,7 +6,6 @@ use thiserror::Error;
 pub enum KvError {
     // #[error("{0}")]
     // AddrParseError(#[from] AddrParseError),
-
     #[error("{0}")]
     Io(#[from] std::io::Error),
 

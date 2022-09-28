@@ -1,7 +1,5 @@
 use serde::{Deserialize, Serialize};
 
-
-
 #[derive(Debug, Serialize, Deserialize)]
 pub enum request {
     Get { key: String },
@@ -14,4 +12,3 @@ pub enum response {
     Ok(Option<String>),
     Err(String),
 }
-

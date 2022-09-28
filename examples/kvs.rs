@@ -1,4 +1,4 @@
-use bitcask::{new_engine,Engine};
+use bitcask::{new_engine, Engine};
 use clap::{App, AppSettings, Arg, SubCommand};
 use std::process::exit;
 
@@ -41,14 +41,13 @@ fn main() {
         Some(("get", sub_m)) => {
             // println!("{:?}", sub_m);
             let key = sub_m.value_of("KEY").unwrap();
-            match store.get(key.to_string()){
-                Ok(res)=>{
-                    println!("get res==>{:?}",res);
-                },
-                Err(e)=>{
-                    println!("get res==>{:?}",e);
-                },
-
+            match store.get(key.to_string()) {
+                Ok(res) => {
+                    println!("get res==>{:?}", res);
+                }
+                Err(e) => {
+                    println!("get res==>{:?}", e);
+                }
             }
             exit(1);
         }
@@ -56,26 +55,26 @@ fn main() {
             // println!("{:?}", sub_m);
             let key = sub_m.value_of("KEY").unwrap();
             let value = sub_m.value_of("VALUE").unwrap();
-            match store.set(key.to_string(), value.to_string()){
-                Ok(res)=>{
-                    println!("set res==>{:?}",res);
-                },
-                Err(e)=>{
-                    println!("set res==>{:?}",e);
-                },
+            match store.set(key.to_string(), value.to_string()) {
+                Ok(res) => {
+                    println!("set res==>{:?}", res);
+                }
+                Err(e) => {
+                    println!("set res==>{:?}", e);
+                }
             }
             exit(1);
         }
         Some(("rm", sub_m)) => {
             // println!("{:?}", sub_m);
             let key = sub_m.value_of("KEY").unwrap();
-            match store.remove(key.to_string()){
-                Ok(res)=>{
-                    println!("rm res==>{:?}",res);
-                },
-                Err(e)=>{
-                    println!("rm res==> {:?}",e);
-                },
+            match store.remove(key.to_string()) {
+                Ok(res) => {
+                    println!("rm res==>{:?}", res);
+                }
+                Err(e) => {
+                    println!("rm res==> {:?}", e);
+                }
             }
             exit(1);
         }
